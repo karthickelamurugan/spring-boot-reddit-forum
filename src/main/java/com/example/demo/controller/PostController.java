@@ -40,15 +40,10 @@ public class PostController {
 	
     @GetMapping
     public ResponseEntity<List<PostResponse>> getAllPosts() {
-//        return ResponseEntity.ok("Hello World!");
+//        return ResponseEntity.ok(postRepo.findAll());
     	
-    	System.out.println(postRepo.findAll());
     	
     	return status(HttpStatus.OK).body(postRepo.findAll());
     }
 
-   
-  
-
-    
 }

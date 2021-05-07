@@ -7,9 +7,12 @@ import javax.persistence.Id;
 @Entity
 public class PostResponse {
     
-   
+   public PostResponse() {
+	   
+   }
 	public PostResponse(String postName, String url, String description, String userName, String subredditName,
 			Integer voteCount, Integer commentCount, String duration, boolean upVote, boolean downVote) {
+		super();
 		this.postName = postName;
 		this.url = url;
 		this.description = description;
